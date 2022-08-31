@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1>Sistema de Nacionalidade</h1>
-    Nacionalidade: <input type="String" name="txtpais" id="txtpais">
-    <input type="button" value="Verificar" onclick="Verificar()">    
+    Sua Nacionalidade : <input type="text" name="txtvel" id="txtvel"> pais
+    <input type="button" value="Verificar" onclick="Calcular()">    
     <div id="res">
 
     </div>
     <script>
-        function Verificar(){
-            var txtp = document.querySelector('input#txtpais')
-            var res = document.querySelector('input#res')
-            var pais = String('txtp.value')
-            res.innerHTML(`<p>Sua nacionalidade e <strong>${pais}</strong></p>`)
+        function Calcular(){
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = String(txtv.value)
+            res.innerHTML = `<p>Sua nacionalidade e <strong>${vel}<strong></p>`
         }
     </script>
 </body>
